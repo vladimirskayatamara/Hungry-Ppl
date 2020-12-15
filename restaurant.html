@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Description" content="Restaurant Hungry People serves high-quality meals for people of all ages.">
+<title>Hungry People</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="icon" type="image" href="/header/logo-wheel.svg">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-menu-item" href="#">HOME</a>
+            <a class="navbar-menu-item" href="#about">ABOUT</a>
+            <a class="navbar-menu-item" href="#team">TEAM</a>
+            <a class="navbar-menu-item" href="#booking">BOOKING</a>
+            <div class="navbar-logo"></div>
+            <a class="navbar-menu-item" href="#menu">MENU</a>
+            <a class="navbar-menu-item" href="#galerie">GALERIE</a>
+            <a class="navbar-menu-item" href="#events">EVENTS</a>
+            <a class="navbar-menu-item" href="#contacts">CONTACTS</a>
+        </nav>
+
+        <div class="hamburger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu-box">
+              <li><a class="menu-item" href="#">HOME</a></li>
+              <li><a class="menu-item" href="#about">ABOUT</a></li>
+              <li><a class="menu-item" href="#team">TEAM</a></li>
+              <li><a class="menu-item" href="#booking">BOOKING</a></li>
+              <li><a class="menu-item" href="#menu">MENU</a></li>
+              <li><a class="menu-item" href="#galerie">GALERIE</a></li>
+              <li><a class="menu-item" href="#events">EVENTS</a></li>
+              <li><a class="menu-item" href="#contacts">CONTACTS</a></li>
+            </ul>
+          </div>
+
+
+        <div class="header-main-info">
+            <span>restaurant</span>
+            <h1>Hungry People</h1>
+            <span>Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+1 40 000 111 222</b></span>
+            <div class="header-main-info-btn">
+                <button>BOOK TABLE</button>
+                <button>EXPLORE</button>
+            </div>
+            
+        </div>
+
+        <div class="header-network-buttons">
+            <a class="network-icon facebook" href="https://www.facebook.com/" target="blank"></a>
+            <a class="network-icon twitter" href="https://twitter.com/" target="blank"></a>
+            <a class="network-icon instagram" href="https://instagram.com/" target="blank"></a></a>
+        </div>
+
+        <button class="vertical-scroll"></button>
+
+    </header>
+
+    <section class="about-us" id="about">
+
+        <div class="about-us-info">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+            <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+        <img alt="main-picture" width="600" height="475" src="about/about-img.png">
+    </section>
+
+    <section id="team" class="team">
+        <span>our team</span>
+        <img alt="main-picture" width="588" height="475" src="about/Group (1).png">
+        <div class="team-info">
+            <h2>Master Chef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+            <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+                     
+           
+          <form class="survey-form" action="submit"> 
+              
+            <h2>Book a table</h2>
+            <ul>
+              <li class="forms-elements"><input type="text" class="name" placeholder="Name" required></input></li>
+               
+              <li class="forms-elements"><input type="number" class="number" placeholder="Phone" min="6"  required></input></li>
+          
+              <li class="forms-elements"><input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" required></input></li>
+              
+              <li class="forms-elements"><input type="email"  placeholder="E-mail" required></input></li>
+          
+              <li class="forms-elements"><input type="number"  placeholder="People" required></input></li>
+          
+              <li class="forms-elements"><input type="time" value="13:00" step="900" required></input></li>
+          </ul>
+          <button сlass="submit-btn" value="submit">Book now</button>
+          </form>
+          
+          <img alt="main-picture" width="588" height="475" src="about/booking-bg.png">
+          <span>Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+1 40 000 111 222</b></span>
+          
+    </section>
+
+    <section id="galerie" class="galerie">
+        <h2>specialties</h2>
+
+        <div class="wrapper">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <input type="radio" name="point" id="slide4">
+            <input type="radio" name="point" id="slide5">
+            <div class="slider">
+                <div class="slides slide1"></div>
+                <div class="slides slide2"></div>
+                <div class="slides slide3"></div>
+            </div>	
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>delicious menu</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        
+<div class="menu-body-1">     
+        <input type="checkbox" class="toggle" id="toggle"><label for="toggle">FOOD</label><span class="close"></span></input>
+
+<div class="toggled">
+     <ul class="menu-list">
+                <li>PIZZA QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>PIZZA QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>PIZZA QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>PIZZA QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>PIZZA QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>PIZZA QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+            </ul>
+            <ul class="menu-list">
+                <li>SOUP QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>SOUP QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>SOUP QUATRO STAGIONI...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+            </ul>
+            <ul class="menu-list">
+                <li>SALAD...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>SALAD...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>SALAD...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>SALAD...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+            </ul>
+</div>
+
+<input type="checkbox" class="toggle-1" id="toggle-1"><label for="toggle-1">DRINKS</label></input>
+
+<div class="toggled-1">
+     <ul class="menu-list">
+                <li>TEA...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>WINE...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>COFFE...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+     </ul>
+     <ul class="menu-list">
+                <li>WATER...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>RED WINE...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+                <li>WHITE WINE...55.68 USD</li><span>Integer ullamcorper neque eu purus euismod</span>
+     </ul>      
+</div>
+</div>   <!--menu-body div-->
+</section>
+       
+
+    
+
+    <section id="events" class="events">
+        <div class="events-info">
+             <h2>PRIVATE EVENTS</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna</p>
+             <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+       
+        <img alt="main-picture" width="400" height="308" src="about/events/private-events.png">
+        <img alt="main-picture" width="400" height="308" src="about/events/private-events-2.png">
+
+    </section>
+
+    <section id="contacts" class="contacts">
+        
+        <div class="form-body">
+        <h2>contact us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        <form class="contacts-form">
+           
+                <input type="text" class="name" placeholder="Name" required width="420"></input>
+                <input type="email"  placeholder="E-mail" class="e-mail" required width="420"></input>
+                <input type="number" class="number" placeholder="Phone" min="6"  required width="420"></input>
+                <input type="textarea" rows="7" class="message" placeholder="Message" required width="1200"></input>
+        
+
+            <div class="contacts-info">
+                <a class="address contacts-icon"><span class="contacts-info-hide">Trump Tower, N.Y.</span></a>
+                <a class="phone contacts-icon" href="tel:+140000001122"><span class="contacts-info-hide">+1 40 000 111 222</span></a>
+                <a class="e-mail contacts-icon" href="mailto:office@hungryppl.com"><span class="contacts-info-hide">office@hungryppl.com</span></a>
+              <button class="submit">Send Message</button>
+            </div> 
+        </form>
+        </div>
+        <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d35814.465267189844!2d-74.00940075816796!3d40.748197471080786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258faf553cfad%3A0x8e9cfc7444d8f876!2sTrump%20Tower!5e0!3m2!1sen!2sru!4v1607081915009!5m2!1sen!2sru"  height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>credits to free Figma layouts. made by Tamara Vladimirskaya.</p>
+    </footer>
+
+</body>
