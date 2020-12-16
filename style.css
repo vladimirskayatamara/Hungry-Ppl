@@ -212,7 +212,6 @@ section{
     display: flex;
     width: 100%;
     padding: 15px;
-    justify-content: center;
 }
 .about-us{
     align-items: center;
