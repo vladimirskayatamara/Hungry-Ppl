@@ -7,7 +7,8 @@
 
 /**first part, main screen**/
 body{
-    padding-bottom: -199px;
+    height: 100%;
+    padding-bottom: -200px;
 }
 header{
     height: 100vh;
@@ -211,11 +212,12 @@ section{
     display: flex;
     width: 100%;
     padding: 15px;
+    justify-content: center;
 }
 .about-us{
     align-items: center;
 }
-.about-us-info, .team-info, .galerie-info{ 
+.about-us-info, .team-info, .galerie-info, .events-info{ 
     text-align: center;
     width: 600px;
 }
@@ -233,7 +235,7 @@ section h2{
     border-bottom: 3px solid #FFD600; 
     text-align: center;
 }
-.about-us-info p:nth-child(2), .team-info p:nth-child(2), .galerie-info p:nth-child(2), .form-body p, .events p:nth-child(2){
+.about-us-info p:nth-child(2), .team-info p:nth-child(2), .galerie-info p:nth-child(1), .form-body p, .events p:nth-child(2){
     font-weight: 700;
     font-size: 20px;
     margin-top: 1.5em;
@@ -536,6 +538,7 @@ section h2{
 
 .contacts{
     flex-direction: column;
+    padding: 0;
 }
 .form-body{
     display: flex;
@@ -651,12 +654,11 @@ section h2{
 
 
 footer{
-    height: 190px;
+    height: 200px;
+    position: absolute;
     width: 100%;
-    background-color: #000;
-    position: relative;
-    left: 0;
-    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    margin-top: calc(19% - 200px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -667,6 +669,41 @@ footer p{
     text-align: center;
 }
 
+@media screen and (max-width: 1248px){
+    .survey-form button{
+        width: 280px;
+        margin-top: 238px;
+    }
+    .survey-form {
+        width: 380px;
+    }
+    .booking span{
+        margin-left: 0;
+        margin-top: 665px;
+    }
+    .booking img{
+        width: 400px;
+        height: 307px;  
+    }
+    .events img:nth-child(3){
+        display: none;
+    }
+    .galerie{
+        flex-direction: column;
+    }
+    .galerie-info {
+        margin: 0 auto 1.5em;
+    }
+    .wrapper{
+        width: 400px;
+        height: 308px;
+        margin-top: 0;
+    }
+    .slide1, .slide2, .slide3{
+        background-size: 400px 308px;
+    }
+    
+}
 @media screen and (max-width: 900px){
     .about-us img, .team img, .galerie-img{
         width: 400px;
@@ -689,30 +726,22 @@ footer p{
         width: 100px;
         height: 45px;
     }
-    .survey-form button{
-        width: 280px;
-        margin-top: 238px;
-    }
+    
     .galerie{
         height: 365px;
     }
-    .wrapper{
-        width: 400px;
-        height: 308px;
-        margin-top: 20%;
-    }
-    .wrapper .controls {
-        left: 30%;
-    }
-    .slide1, .slide2, .slide3{
-        background-size: 400px 308px;
-    }
+    
     .booking img{
-        width: 400px;
-        height: 325px;
+       display: none;
+    }
+    .booking ul{
+        justify-content: center;
     }
     .booking span{
         margin-top: 700px;
+    }
+    .survey-form button{
+        margin-left: 30px;
     }
     .events {
         flex-wrap: wrap;
@@ -763,6 +792,10 @@ footer p{
     .toggle:checked ~ .toggled{
         height: auto;
     }
+    footer{
+        height: 100px;
+        margin-top: calc(12% - 100px);
+    }
    
 }
 @media screen and (max-width: 426px){
@@ -783,15 +816,15 @@ footer p{
          width: 200px;
         height: 154px;
     }
-    .about-us-info, .team-info, .galerie-info{
+    .about-us-info, .team-info, .galerie-info, .events-info{
         width: auto;
         margin: 0;
         padding: 15px;
     }
-    .about-us-info p, .team-info p, .galerie-info p {
+    .about-us-info p, .team-info p, .galerie-info p, .events-infp p {
         font-size: 10px;
     }
-    .about-us-info p:nth-child(2), .team-info p:nth-child(2), .galerie-info p:nth-child(2), .form-body p {
+    .about-us-info p:nth-child(2), .team-info p:nth-child(2), .galerie-info p:nth-child(2), .form-body p, .events-info p:nth-child(2) {
         font-size: 12px;
         
     } 
@@ -803,7 +836,9 @@ footer p{
     .team{
         flex-direction: column-reverse;
     }
-   
+    .galerie-info p{
+        display: none;
+    }
     .booking{
         height: 600px;
     }
@@ -812,6 +847,7 @@ footer p{
     }
     .booking span {
         margin-top: 41em;
+        margin-left: 0;
         display: inline;
         padding: 15px;
         text-align: center;
