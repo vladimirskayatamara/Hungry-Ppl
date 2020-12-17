@@ -218,7 +218,6 @@ section{
 }
 .about-us-info, .team-info, .galerie-info, .events-info{ 
     text-align: center;
-    width: 600px;
 }
 .about-us-info{
     margin: auto 0 auto auto;
@@ -816,7 +815,6 @@ footer p{
         height: 154px;
     }
     .about-us-info, .team-info, .galerie-info, .events-info{
-    
         margin: 0;
         padding: 15px;
     }
