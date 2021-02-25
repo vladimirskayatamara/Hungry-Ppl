@@ -216,7 +216,7 @@ section{
 .about-us{
     align-items: center;
 }
-.about-us-info, .team-info, .galerie-info, .events-info{ 
+.about-us-info, .team-info, .events-info{ 
     text-align: center;
 }
 .about-us-info{
@@ -233,14 +233,14 @@ section h2{
     border-bottom: 3px solid #FFD600; 
     text-align: center;
 }
-.about-us-info p:nth-child(2), .team-info p:nth-child(2), .galerie-info p:nth-child(1), .form-body p, .events p:nth-child(2){
+.about-us-info p:nth-child(2), .team-info p:nth-child(2), .form-body p, .events p:nth-child(2){
     font-weight: 700;
     font-size: 20px;
     margin-top: 1.5em;
     margin-bottom: 1em;
     text-align: center;
 }
-.about-us-info p, .team-info p, .galerie-info p, .events p{
+.about-us-info p, .team-info p, .events p{
     font-weight: 400;
     font-size: 15px;
     text-align: center;
@@ -264,7 +264,7 @@ section h2{
     background-image: url(about/specialty-bg.png);
     background-size: cover;
 }
-.team span, .galerie span{
+.team span{
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -279,11 +279,11 @@ section h2{
     left: 50%;
     margin-top: 5em;
 }
-.team-info, .galerie-info{
+.team-info{
     color: #fff;
     margin: auto auto auto 0;
 }
-.team img, .galerie img{
+.team img{
     align-self: center;
     margin: auto 0 auto auto;
 }
@@ -358,109 +358,93 @@ section h2{
   }
 
 
-
-
-.galerie{
-      background-image: url(about/galerie-bg.png);
-      background-size: cover;
-}
-.galerie h2{
-    color: #FFF;
-}
-.wrapper {
-	height: 550px;
-	margin: 10% auto 0;
-	position: relative;
-	width: 700px;
-}
-.slider {
-	background-color:transparent;
-	height: inherit;
-	overflow: hidden;
-	position: relative;
-	width: inherit;
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-}
-.wrapper > input {
-	display: none;
-}
-.slides {
-	height: inherit;
-	position: absolute;
-	width: inherit;
-}
-.slide1 { 
-    background-image: url(about/dish-2.png);
-    background-repeat: no-repeat; 
-}
-.slide2 { 
-    background-image: url(about/dish-3.png); 
-    background-repeat: no-repeat;
-}
-.slide3 { 
-    background-image: url(about/dish.png); 
-    background-repeat: no-repeat;
-}
-.wrapper .controls {
-	left: 40%;
+  .sim-slider {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border: none;
+  }
+  .sim-slider img{
+      width: 100%;
+  }
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
     position: absolute;
-}
-.wrapper label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	border-radius: 50%;
-}
-.wrapper label:after {
-	border: 2px solid #ddd;
-	content: " ";
-	display: block;
-	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
-	width: 12px;
-	border-radius: 50%;
-}
-.wrapper label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	border-radius: 50%;
-	transition: background ease-in-out .5s;
-}
-
-.wrapper label:hover, 
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3) {
-	background: #ddd;
-}
-.slides {
-	height: inherit;
-	opacity: 0;
-	position: absolute;
-	width: inherit;
-	z-index: 0;
-	transform: scale(1.5);
-	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-}
-
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3 {
-	opacity: 1;
-	z-index: 1;
-    transform: scale(1);
-}
-
-
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
 
 
@@ -686,12 +670,6 @@ footer p{
     .events img:nth-child(3){
         display: none;
     }
-    .galerie{
-        flex-direction: column;
-    }
-    .galerie-info {
-        margin: 0 auto 1.5em;
-    }
     .wrapper{
         width: 400px;
         height: 308px;
@@ -703,7 +681,7 @@ footer p{
     
 }
 @media screen and (max-width: 900px){
-    .about-us img, .team img, .galerie-img{
+    .about-us img, .team img{
         width: 400px;
         height: 307px;
     }
@@ -724,11 +702,6 @@ footer p{
         width: 100px;
         height: 45px;
     }
-    
-    .galerie{
-        height: 365px;
-    }
-    
     .booking img{
        display: none;
     }
@@ -809,19 +782,19 @@ footer p{
     .facebook::before, .twitter::before, .instagram::before{
         transform: rotate(270deg);
     }
-    .about-us img, .team img, .galerie-img, .events img {
+    .about-us img, .team img, .events img {
         margin: 0;
          width: 200px;
         height: 154px;
     }
-    .about-us-info, .team-info, .galerie-info, .events-info{
+    .about-us-info, .team-info, .events-info{
         margin: 0;
         padding: 15px;
     }
-    .about-us-info p, .team-info p, .galerie-info p, .events-infp p {
+    .about-us-info p, .team-info p, .events-infp p {
         font-size: 10px;
     }
-    .about-us-info p:nth-child(2), .team-info p:nth-child(2), .galerie-info p:nth-child(2), .form-body p, .events-info p:nth-child(2) {
+    .about-us-info p:nth-child(2), .team-info p:nth-child(2), .form-body p, .events-info p:nth-child(2) {
         font-size: 12px;
         
     } 
@@ -832,9 +805,6 @@ footer p{
     }
     .team{
         flex-direction: column-reverse;
-    }
-    .galerie-info p{
-        display: none;
     }
     .booking{
         height: 600px;
@@ -890,9 +860,6 @@ footer p{
     }
     .contacts-form button{
         width: 150px;
-    }
-    .galerie{
-        height: 365px;
     }
     .menu-list li{
         font-size: 9px;
